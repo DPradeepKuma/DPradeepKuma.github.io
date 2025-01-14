@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabboice sequence</title>
+    <link href="fab.css">
+    <style>
+
+        .backGroundColor{
+            background-color: rgb(138, 48, 217);
+            height: 100px;
+            width: 100px;
+}
+.HEadinStyle{
+    font-family: "roboto";
+    
+    color:black;
+
+
+}
+.button{
+    background-color: black;
+}
+.backGroundcolorofheading{
+    color:white;
+
+}
+    </style>
+</head>
+<body class="backGroundColor r">  
+    <div >
+        <h1 class="HEadinStyle d-flex flex-column justify-content-center">This is <b>fabonic sequence </b></h1>
+    </div>
+     
+    <script>
+        let a = 0;
+        let b = 1;
+
+        function Fibonicc(num)
+        {
+            document.write(a, "<br>")
+
+            for(let x =0 ; x < num ; x++)
+            {
+                c = a + b;
+                b = a;
+                a = c;
+
+                document.write(a, "<br>");
+            } 
+        }
+
+        Fibonicc(15);
+    </script>
+    <!-- <div>
+        <h3 id="info">This is information about fabonnic sequence</h3>
+        <button class="button onclick('info')"> <h1 class="backGroundcolorofheading">about fabonnoic click here</h1></button>
+    </div> -->
+
+</body>
+</html>
+
+
+
+
